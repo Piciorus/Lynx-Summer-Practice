@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before {
+  box-sizing: inherit;
+}
+*:after {
+  box-sizing: inherit;
+}
+
+.photo-grid-container {
+  margin: 0px auto;
+  margin-top: 100px;
+  max-width: 800px;
+  column-gap: 0.5px;
+  background-color: #f6f6f6;
+}
+
+.photo-grid-container2 {
+  margin: 0px auto;
+  margin-top: 15px;
+  max-width: 800px;
+  column-gap: 0.5px;
+  background-color: #f6f6f6;
+}
+
+.item {
+  background: #f6f6f6;
+  padding: 1em;
+  margin: 0 0 1.5em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .photo-grid-container {
+    column-count: 3;
+  }
+  .photo-grid-container2 {
+    column-count: 3;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .photo-grid-container {
+    column-count: 3;
+  }
+  .photo-grid-container2 {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 800px) {
+  .photo-grid-container {
+    flex: 50%;
+    column-count: 2;
+    max-width: 75%;
+  }
+}
+@media (max-width: 600px) {
+  .photo-grid-container {
+    flex: 75%;
+    max-width: 75%;
+    column-count: 1;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .photo-grid-container2 {
+    column-count: 2;
+  }
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#items {
+  background-color:  #f6f6f6;
+  margin-top: 5px;
+  width: 800px;
+  height: 100px;
+}
+
+.page_404 {
+  padding: 40px 0;
+  background: #fff;
+  font-family: "Arvo", serif;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+}
+.contant_box_404 {
+  margin-top: -50px;
+}
