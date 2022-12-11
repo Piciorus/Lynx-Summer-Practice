@@ -6,6 +6,6 @@ During this student program I improved my skills in front-end development. I was
 
 - React
 - Typescript
-- Tailwind
+- Tailwind CSS
 - Material UI
 - CSS & HTML

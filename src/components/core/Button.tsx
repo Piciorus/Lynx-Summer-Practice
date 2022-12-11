@@ -27,7 +27,7 @@ const Button: React.FC<Props> = ({
   backgroundColor = "light",
   textallign = "center",
 }) => {
-
+  
   const variantClass = (variant: any) => {
     switch (variant) {
       case "standard":
